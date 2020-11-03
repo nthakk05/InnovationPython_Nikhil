@@ -1,0 +1,75 @@
+Task 1 
+
+Answe 1 #
+
+Create three variables in a single line and assign values to them in such a manner that each one of
+them belongs to a different data type.
+
+a, b, c = 1 , 2.5 , "Nikhil"
+
+Answe 2 #
+
+
+
+Answe 4 #
+
+Python 3. 0 code
+
+Name = input("Enter your Name : ")
+print("Hello " + Name)
+
+Python 2.0 code 
+
+name =raw_input("Enter your name :  ")
+print("Hello " + name)
+
+
+
+Answe 5 #
+Write a program to complete the task given below:
+Ask users to enter any 2 numbers in between 1-10 , add the two numbers and keep the sum in
+another variable called z. Add 30 to z and store the output in variable result and print result as the
+final output.
+
+while True:
+    num1 = float(input("enter first number between 1-10: "))
+    if num1 in range (1, 11):
+        print(num1)
+        break
+    else:print("please enter a valid number")
+
+while True:
+    num2 = float(input("enter second number between 1-10: "))
+    if num2 in range (1, 11):
+        print(num2)
+        break
+    else:print("please enter a valid number")
+
+z = num1 + num2
+print("The is sum of two number is " + str(z))
+a = 30
+b = float(z) + a
+print( "The value after adding 30 is " + str(b))
+
+
+Answe 6 #
+
+while True :
+    var = eval(input("Enter the value: "))
+    print(type(var))
+Answer 7#
+
+Answer 8#
+
+variables in Python can be reassigned to a new value that is a different data type from its current value. 
+In fact, variables can be reassigned to any valid value in Python, regardless of its current value.
+Variables are essentially like an empty box, that can contain something like a string, number, or other 
+value. When you assign it a value, the box will contain that value, and when you reassign it, it will empty 
+out the old value, and the new value will be placed inside of it.
+
+
+
+
+
+
+
