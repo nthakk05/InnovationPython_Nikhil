@@ -1,0 +1,21 @@
+1.	Make a repository on GitHub with the name “InnovationPython_yourname”
+https://github.com/nthakk05/InnovationPython_Nikhil.git
+ 
+2.	Read about the difference between Git and GitHub
+Git is a version control software that you need to install on your local system to use it. For an individual working on a project alone, Git proves to be excellent software. But what if you are working on a project with a large team. All will be working on the same project but each of you will be having a different version of the same project. Suppose you have made changes in the project directory on your machine and you want to send those changes to your collaborators. Also, you want the changes they make to appear directly in your machine’s project directory. As working on a project, being on the same page with your teammates is very crucial to avoid any type of conflict. So, how you will do that? Well, no worries Git takes care of all but the only condition here is, each of your team members must have Git installed on their systems.
+As told, Git is a version control system which tracks the changes when working with computer codes while GitHub is a Web-based Git version control repository hosting service. It provides all of the distributed version control and source code management (SCM) functionalities of Git while topping it with a few of its features. It is a heaven for the developers where they can store their projects and get connected with like-minded people. You can think of it as a “cloud for codes”.
+So basically it is a place to store your identical working directories or repositories. It is a hub for the Git repositories which you can use, simply by creating a free account on the GitHub. These accounts come with an abundant storage space where you can store your repositories and build a proper profile that holds great value. By default the repositories are public i.e., everyone can see your codes but you can make it private as well. So if you are a good coder you can upload your applications and programs and get recognition from others.
+3.	How many types of version control systems are there?
+The various types of version control systems are:
+1.	Local Version Control System
+2.	Centralized Version Control System
+3.	Distributed Version Control System
+4.	Explain the Branching concept in Git.
+When you're working on a project, you're going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow
+When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the main branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.
+Branching is a core concept in Git, and the entire GitHub flow is based upon it. There's only one rule: anything in the main branch is always deployable.
+5.	Explain Forking Workflow in Git.
+step1: You modify a file in the working directory.
+step2: You add that file to the staging area.
+step3: You perform a git commit operation that moves the file from the staging area.
+ 
