@@ -1,0 +1,153 @@
+
+Answer 1#
+
+Write a program in Python to perform the following operation:
+
+while True:
+        a = "consultadd"
+        b = "Python Training"
+        c = "Consultadd - Python Training"
+        x = float(input("Enter a Number: "))
+        if x % 3 == 0 and x % 5 == 0:
+            print(c)
+        elif x % 3 == 0:
+            print(a)
+        elif x % 5 == 0:
+            print(b)
+        else:print("Number is not divisible by 3, 5 or Both")
+
+Answer 2#
+
+Write a program in Python to perform the following operator based task
+
+print("""Enter 1 for Addition , 
+Enter 2 for Subtraction, 
+Enter 3 for Division, 
+Enter 4 for Multiplication, 
+Enter 5 for Average""")
+
+a = int(input("Enter a value : "))
+if a == 1:
+    b = float(input("Enter First Number for addition: "))
+    c = float(input("Enter Second Number for addition: "))
+    d = b + c
+    print(d)
+elif a == 2:
+    e = float(input("Enter First Number for Subtraction: "))
+    f = float(input("Enter Second Number for Subtraction: "))
+    g = e - f
+    print(g)
+elif a == 3:
+    h = float(input("Enter First Number as numerator for Division: "))
+    i = float(input("Enter Second Number for denominator Division: "))
+    j = h / i
+    print(j)
+elif a == 4:
+    k = float(input("Enter First Number for Multiplication: "))
+    l = float(input("Enter Second Number for Multiplication: "))
+    m = k * l
+    print(m)
+elif a == 5:
+    numbers = input("Enter numbers separated by space ")
+    numberList = numbers.split()
+    sum1 = 0
+    for num in numberList:
+        sum1 += float(num)
+    average = sum1 / len(numberList)
+    print("Average of all entered numbers = ", average)
+else:print("Please Enter a valid Selection")
+
+Answer 3#
+b = 20
+c = 30
+avg = (a +b +c)/3
+print("avg = ", avg)
+if (a > avg) and (b > avg) and  (c > avg):
+    print("Average is higher than A, B, C")
+elif (a > avg) and (b > avg):
+    print("Average is higher than A, B")
+elif (a > avg) and (c > avg):
+    print("Average is higher than A, C")
+elif (b > avg) and (c > avg):
+    print("Average is higher than B, C")
+elif (a > avg):
+    print("Avg is just higher than a")
+elif (b > avg):
+    print("Avg is just higher than B")
+elif (c > avg):
+    print("Avg is just higher than C")
+
+Answer 4 #
+a = float(input("Enter a Value:  " ))
+while True:
+    if a > 0:
+        print("Good Going")
+        a = float(input("Enter a Value:  " ))
+    elif a < 0:
+        print("It's over")
+        break
+Answer 5#
+
+
+print(*[i for i in range(2000, 3201) if not(i%7) and i%5])
+
+Answer 6 #
+
+ans 1. TypeError: 'int' object is not iterable
+
+ans 2. 
+
+0
+error
+1
+error
+2
+
+Ans 3 Error because B in a break is capital 
+
+Answer 7 #
+
+for x in range(6):
+    if (x == 3 or x==6):
+        continue
+    print(x,end=' ')
+
+Answer 8 #
+s = input('enter the combination: ')
+wcount = 0
+ncount = 0
+
+
+ncount = sum(c.isdigit() for c in s)
+wcount = sum(c.isalpha() for c in s)
+print("number of letters in the string is", wcount)
+print("number of digits in the string is ", ncount)
+
+Answer 9 #
+
+Part 1 
+
+secret_number = "3"
+secret_number = "3"
+guess = ""
+while guess != secret_number:
+    guess = input("guess the lucky number: ")
+print("you win!")
+
+Part 2 
+
+
+
+Answer 10 #
+
+
+
+
+
+
+
+
+
+
+
+
