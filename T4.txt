@@ -1,0 +1,142 @@
+1. Write a program to reverse a string.
+
+a = "1234abcd"
+print(a[::-1])
+
+Answer 2. 
+
+def count_case(c):
+    l={"UPPER CASE" :0, "LOWER_CASE":0}
+    for a in c:
+        if a.isupper():
+            l["UPPER CASE"]+=1
+        elif a.islower():
+            l["LOWER_CASE"]+=1
+        else:
+            pass
+    print("No. of Upper case characters : ", l["UPPER CASE"])
+    print("No. of Lower case characters : ", l["LOWER_CASE"])
+count_case(input("enter text: "))
+
+Answer 3
+
+
+def new_list(l):
+  a = []
+  for x in l:
+    if x not in a:
+      a.append(x)
+  return a
+
+print(new_list([1,2,2,2,3,3,3,4,5,9,9,9,]))
+
+
+Answe 4 
+
+items=[n for n in input("enter text: ").split('-')]
+items.sort()
+print('-'.join(items))
+
+
+Answer 5
+
+lines = []
+while True:
+    s = input("enter line: ")
+    if s:
+        lines.append(s.upper())
+    else:
+        break
+for sentence in lines:
+    print(sentence)
+
+
+Answer 6:
+
+a = input("Enter First Number: ")
+b = input("Enter Second Number: ")
+c = float(a)
+d = float(b)
+
+total = c + d
+
+print(total)
+
+
+Answer 7 
+
+def length_of_string(str1, str2):
+    if (len(str1) == len(str2)):
+        print(str1)
+        print("\n")
+        print(str2)
+    elif (len(str1) < len(str2)):
+        print(str2)
+    else:
+        print(str1)
+stri1 = input(str("enter First String: "))
+stri2 = input(str("enter Second String: "))
+
+length_of_string(stri1, stri2)
+
+
+Answer 8 
+
+def printValues():
+    l = list()
+    for i in range(1, 21):
+        l.append(i ** 2)
+    print(l)
+
+
+printValues()
+
+
+Answer 9 
+def showNumbers(limit):
+    for i in range(0,limit+1):
+        print(i,end=" ")
+        if(i%2==0):
+            print("EVEN")
+        else:
+            print("ODD")
+
+limit=int(input("Enter limit:"))
+showNumbers(limit)
+
+Answer 11
+
+def even(x):
+    return x%2==0
+
+def squer(x):
+    return x*x
+
+li = [1,2,3,4,5,6,7,8,9,10]
+li = map(squer,filter(even,li))   
+print(list(li))
+
+Answer 12
+
+def divide():
+    return 5/0
+
+try:
+    divide()
+except ZeroDivisionError as ze:
+    print("You can not divide zero number by ZERO!!")
+except:
+    print("Any other exception")
+
+Answer 14
+
+nl=[]
+for x in range(1, 100):
+    if (x%7==0) and (x%5==0):
+        nl.append(str(x))
+print (','.join(nl))
+
+
+
+
+
