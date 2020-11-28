@@ -1,0 +1,42 @@
+Answer 1
+
+a = "'CSE', 'NetWorking', 'Operating System"
+char_upper = [char for char in a if char.isupper()]
+print("The uppercase characters in string are : " + str(char_upper))
+
+
+Answer 2
+
+
+students = ['Smit', 'Jaya', 'Rayyan']
+subjects = ['CSE', 'Networking', 'Operating System']
+
+a = dict(zip(students, subjects))
+
+print(a)
+
+
+Answer 4
+
+def reverse(str):
+    length = len(str)
+    for i in range(length - 1, -1, -1):
+        yield str[i]
+
+for char in reverse("Consultadd Training"):
+    print(char)
+
+Answer 5
+
+def check(func):
+        def inside (a, b):
+                if b==0:
+                        print("You can not enter Zero" )
+                        return
+                return func (a,b)
+        return inside
+@check
+def div (a, b):
+    return a / b
+print(div(10, 5))
+

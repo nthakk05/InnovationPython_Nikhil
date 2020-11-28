@@ -1,0 +1,90 @@
+
+Answer 2 
+
+
+from sys import argv
+
+print("Enter the Following to open a file on terminal"
+      "\npython taskfive.py T4.text")
+nop, fn = argv
+fn == "T4"
+nop == "python taskfive.py"
+
+try:
+    while True:
+        with open(fn, "r") as Fh:
+            c = Fh.readlines()
+            print(c)
+            break
+except:
+        print("please enter the file name again")
+
+
+Answe 3 
+
+try:
+    b = float(input("please enter a four digit: "))
+    a =str(b)
+    if len(a) == 4:
+        print(a)
+    elif len(a) < 4:
+        print("The length is too short !!! Please provide only four digits")
+    elif len(a) > 4:
+        print("The length is too long !!! Please provide only four digits")
+except ValueError:
+    print("please enter digits only ")
+
+Answer 4
+d = dict(username= input("Enter a username: " ),password = input("Enter a password: "))
+userdetail = str(d)
+
+print("you have submitted your data")
+print("Enter a username and password to gain the access")
+
+d1 = {}
+userdetail1 = str(d1)
+count = 0
+attempt = 3
+out_of_guess = False
+while userdetail1 != userdetail and not out_of_guess:
+        if count < attempt:
+                d1 = dict(username= input("Enter a username: " ), password = input("Enter a password: "))
+                userdetail1 = str(d1)
+                count += 1
+        else:
+                out_of_guess = True
+if out_of_guess:
+        print("you have reached to limit of attempt Access Denied")
+else:
+        print("Access Granted")
+
+Answer 6
+
+file = open("doc.txt", "w")
+file.writelines("Hello I am a file\n"
+                "Where you need to return the data string\n"
+                "Which is of even length\n"
+                "Make sure you return the content in The same link as it is present.")
+file.close()
+file1 =open("doc.txt", "r")
+line = file1.readlines()
+def printWords(s):
+        
+        for word in s:
+                if len(word) % 2 == 0:
+                        print(word)
+
+              
+
+
+s = line
+printWords(s)
+
+
+
+
+
+
+
+
+
