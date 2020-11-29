@@ -1,0 +1,129 @@
+Answer 1
+
+x=[100,200,300,400,500,[1,2,3,4,5,[10,20,30,40,50],6,7,8,9],600,700,800]
+
+print("Access list 1 => ", x[5][0:4])
+print("Access list 2 => ", x[6:8])
+print("Access list 3 => ", x[::2])
+print("Access list 4 => ", x[::-1])
+print("Access list 5 => ", x[5][5][0])
+print("Access list 5.1 => ", x.clear())
+x = []
+print("Access list 5.2 => ", x)
+
+Answer 4
+
+for i in range(1, 100+1):
+    if((i%3==0) & (i%2==0)):
+      print(i)
+
+
+Answer 5 
+
+
+def reverse(s):
+    str = ""
+    for i in s:
+        str = i + str
+    return str
+s = input('Type a sentence: ')
+string =reverse(s)
+print(string)
+for letter in string:
+    if letter in 'aeiouAEIOU':
+       print(letter)
+position = 0
+vowels = ("aeiouAEIOU")
+for char in string:
+    if char in vowels:
+        print(char, "position of vowel after revers => ", position)
+    position += 1
+Answer 6
+
+def printWords(s):
+    s = s.split(' ')
+    for word in s:
+        if len(word) % 2 == 0:
+            print(word)
+s = "hello my name is abcde"
+printWords(s)
+
+
+Answer 7
+
+
+def getPairsCount(x, n, sum):
+    count = 0
+    for i in range(0, n):
+        for j in range(i + 1, n):
+            if x[i] + x[j] == sum:
+                count += 1
+
+    return count
+x = [1,2,3,4,5,6,7,8,9,-1]
+n = len(x)
+sum = 8
+print("Count of pairs is",
+      getPairsCount(x, n, sum))
+
+Answer 8
+
+
+a=[]
+n=int(input("Enter number of elements:"))
+for i in range(1,n+1):
+        b=int(input("Enter number between 1 to 50:"))
+        if b in range(0, 51):
+            a.append(b)
+        else:
+            print("enter number between 1 to 50")
+even =[]
+odd = []
+for j in a:
+    if (j % 2 == 0):
+        if len(even) == 5:
+            even.pop()
+        else:
+             None
+        even.append(j)
+    else:
+        odd.append(j)
+        if len(odd) == 6:
+           odd.pop()
+        else:
+           None
+
+print("The even list",even)
+print("The odd list",odd)
+even_sum = sum(even)
+print("sum of even list is =>", even_sum)
+odd_sum = sum(odd)
+print("sum of odd list is =>", odd_sum)
+
+print("The max number in even list",max(even))
+print("The max number in even list",max(odd))
+
+Answer 9
+
+inp_str = "12abcbacbaba344ab"
+
+res = ''.join([i for i in inp_str if not i.isdigit()])
+
+freq = {}
+
+for ele in res:
+    if ele in freq:
+        freq[ele] += 1
+    else:
+        freq[ele] = 1
+print(str(freq))
+
+Answer 10
+
+tpl = (1,2,3,4,5,6,7,8,9,10)
+tpl1 = tuple(i for i in tpl if i%2 == 0)
+print(tpl1)
+
+
+
+
