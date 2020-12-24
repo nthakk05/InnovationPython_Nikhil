@@ -1,0 +1,25 @@
+
+<html>
+<body>
+
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'login2/login2.css' %}">
+
+
+<form method="post">
+    <h2>Login</h2>
+    <div class="imgcontainer">
+    <img src="{% static 'images/l1.png' %}" alt="Avatar" class="avatar">
+    </div>
+    {{ login_c.as_p }}
+    {% csrf_token %}
+<!--    <input type="submit" value="Login">-->
+    <button type="submit">Login</button>
+
+</form>
+</body>
+</html>
+
+<button onclick="location.href='{% url 'Home' %}'" type="button"> Home </button>

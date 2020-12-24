@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+table {
+  border-spacing: 10px;
+}
+</style>
+</head>
+<body>
+
+<html>
+<body>
+<table border="1" style="width:100%" >
+    <tr>
+    <th>Author Name</th>
+    <th>Title</th>
+    <th>Content</th>
+    </tr>
+
+<tbody>
+    {% for blog in object_list %}
+    <tr>
+    <td style="width:15%"> {{ blog.AuthorName }}</td>
+    <td style="width:35%" >{{ blog.Title }}</td>
+    <td style="width:30%" >{{ blog.Content }}</td>
+    <td>
+        <button onclick="location.href='{% url 'blog_view' blog.id %}'" type="button"> View Full Blog</button>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+<pre>
+
+<button onclick="location.href='{% url 'blog_new' %}'" type="button"> Add new Blog</button>
+</pre>
+<button onclick="location.href='{% url 'Home' %}'" type="button"> Logout </button>
