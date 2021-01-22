@@ -1,0 +1,48 @@
+import threading
+import time
+
+floor = []
+current_floor = 0
+floor_limit = [-2,-1,0,1,2,3,4,5]
+
+def get_input():
+    input1 = input()
+    if int(input1) in  floor_limit:
+        floor.append(input1)
+    else:
+        print("This bulding has floor from -2 to 5")
+        print("Which floor you want to go  : ", end="")
+        get_input()
+def increment():
+    global current_floor
+    current_floor += 1
+    time.sleep(2)
+    print("Going up : ", current_floor)
+def decrement():
+    global current_floor
+    current_floor -= 1
+    time.sleep(2)
+    print("Going Down : ", current_floor)
+def traverse():
+                while (True):
+
+                            if floor:
+                                if (current_floor > int(floor[0])):
+                                        decrement()
+                                if (str(current_floor) in floor):
+                                        print("you are at the : ", current_floor, "floor")
+                                        time.sleep(.5)
+                                        floor.remove(str(current_floor))
+                                        print("Which floor you want to go  : ", end="")
+                                        break
+                                if (current_floor < int(floor[0])):
+                                        increment()
+
+if __name__ == '__main__':
+    print("Which floor you want to go  : ", end="")
+    while (True):
+            t1 = threading.Thread(target=get_input, name='t1')
+            t2 = threading.Thread(target=traverse, name='t2')
+            t1.start()
+            time.sleep(1)
+            traverse()
